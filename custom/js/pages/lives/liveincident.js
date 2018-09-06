@@ -1,10 +1,10 @@
 
 $(() => {
 
-  $('#btnIncidentsData').click(showIncidentsData);
   $('#btnIncidentsMap').click(function(){
     showAllIncidentMap(arrIncidents);
   })
+  $('#selectIncident').change(showIncidentsData);
   SelectComponentService.renderIncidentSelectList(true);
   showIncidentListDefault();
 })
